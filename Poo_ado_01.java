@@ -1,6 +1,8 @@
-
-package poo_ado_01;
-
+/*
+Autor: Noá Miglio
+Data: 16/08
+*/
+package aula.ago16;
 import java.util.Scanner;
 
 public class Poo_ado_01 {
@@ -50,18 +52,20 @@ public class Poo_ado_01 {
                    if(valor < menor){
                        menor = valor;
                    }
-                   if(i == j){
+                   if(i == j){ // diagonal principal
                        somaDiagonalPrincipal += valor;
                    }
-                   /*if(i == j){
-                       somaDiagonalPrincipal += valor;
+                   if(i + j == matriz.length-1){ //diagonal secundaria
+                       somaDiagonalSecundaria += valor;
                    }
-                   */
+                   
                }
            }
            System.out.println("somaTotal: " + somaTotal);
            System.out.println("maior: " + maior);
            System.out.println("menor: " + menor);
+           System.out.println("Diagonal principal: " + somaDiagonalPrincipal);
+           System.out.println("Diagonal secundaria: " + somaDiagonalSecundaria);
        }
     }
     
